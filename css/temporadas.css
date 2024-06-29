@@ -1,0 +1,109 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+}
+
+    .seasons-list{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+        .seasons-list li a{
+            color: var(--custom-white);
+            font-size: 24px;
+            text-wrap: nowrap;
+            transition: var(--transition);
+        }
+
+        .seasons-list li a:hover{
+            color: var(--custom-gray);
+        }
+
+    .season-data{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        width: 100%;
+    }
+
+    .season-data article{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .title h1{
+            color: var(--custom-white);
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            text-wrap: nowrap;
+        }
+
+        .season-data h2{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            color: var(--custom-gray);
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .season-data p{
+            color: var(--custom-gray);
+        }
+
+        .season-data a{
+            color: var(--custom-gray);
+            font-size: 14px;
+            font-weight: 300;
+            transition: var(--transition);
+            width: fit-content;
+        }
+
+        .season-data a:hover{
+            color: var(--custom-white);
+        }
+
+.bold{
+    font-weight: 900;
+    color: var(--custom-white);
+}
+
+.bold a{
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    .seasons-list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px){
+    .season-data h1{
+        font-size: 32px;
+    }
+
+    .season-data h2{
+        font-size: 18px;
+    }
+
+    .bold a{
+        font-size: 18px;
+    }
+}
